@@ -1,0 +1,62 @@
+{
+  "name": "@deads-inc/dsh-web-search-brave",
+  "description": "Brave Search API-backed web search provider for the DeepSeek Harness web capability seam (ctx.web)",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "author": "Deadman <christopher.hubmann@gmail.com>",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "cordis",
+    "web-search",
+    "brave",
+    "brave-search",
+    "search-provider",
+    "search",
+    "agent",
+    "llm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisDeadman/dsh-web-search-brave.git"
+  },
+  "homepage": "https://github.com/ChrisDeadman/dsh-web-search-brave#readme",
+  "bugs": {
+    "url": "https://github.com/ChrisDeadman/dsh-web-search-brave/issues"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1",
+    "@deepseek-ai/dsh-credentials": ">=0.1.0-rc.6",
+    "@deepseek-ai/dsh-launch-environment": ">=0.1.0-rc.6",
+    "@deepseek-ai/dsh-settings": ">=0.1.0-rc.6",
+    "@deepseek-ai/dsh-web": ">=0.1.0-rc.6",
+    "@deepseek-ai/schemastery": ">=3.18.1"
+  }
+}

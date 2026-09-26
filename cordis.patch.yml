@@ -1,0 +1,8 @@
+# Bundle patch: registers the Brave Search provider for the web capability
+# seam. Installed alongside the package; applied before the user's own
+# profile cordis.patch.yml, which can override it (e.g. to set searchProvider).
+- insert:
+    - id: web-search-brave
+      name: '@deads-inc/dsh-web-search-brave'
+      config:
+        apiKeyEnv: BRAVE_API_KEY
