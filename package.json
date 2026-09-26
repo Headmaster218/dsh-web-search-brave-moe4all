@@ -1,7 +1,7 @@
 {
-  "name": "@deads-inc/dsh-web-search-brave",
-  "description": "Brave Search API-backed web search provider for the DeepSeek Harness web capability seam (ctx.web)",
-  "version": "1.0.0",
+  "name": "dsh-web-search-brave-moe4all",
+  "description": "MoE4All edition of the Brave Search provider for the DeepSeek Harness web capability seam (ctx.web)",
+  "version": "1.0.0-moe4all.1",
   "type": "module",
   "main": "index.js",
   "exports": {
@@ -26,11 +26,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisDeadman/dsh-web-search-brave.git"
+    "url": "git+https://github.com/Headmaster218/dsh-web-search-brave-moe4all.git"
   },
-  "homepage": "https://github.com/ChrisDeadman/dsh-web-search-brave#readme",
+  "homepage": "https://github.com/Headmaster218/dsh-web-search-brave-moe4all#readme",
   "bugs": {
-    "url": "https://github.com/ChrisDeadman/dsh-web-search-brave/issues"
+    "url": "https://github.com/Headmaster218/dsh-web-search-brave-moe4all/issues"
+  },
+  "moe4all": {
+    "upstream": "@deads-inc/dsh-web-search-brave@1.0.0",
+    "repository": "https://github.com/ChrisDeadman/dsh-web-search-brave",
+    "commit": "c85a6cd16cad0032205a00c07bd5da1473bde390"
   },
   "files": [
     "index.js",

@@ -9,9 +9,9 @@ import { WebError } from "@deepseek-ai/dsh-web";
 
 const BRAVE_PROVIDER_ID = "brave-search";
 const BRAVE_DEFAULT_BASE_URL = "https://api.search.brave.com/res/v1/web/search";
-const USER_AGENT = "dsh-web-search-brave/1.0.0";
+const USER_AGENT = "dsh-web-search-brave-moe4all/1.0.0";
 
-const name = "web-search-brave";
+const name = "web-search-brave-moe4all";
 const inject = ["web"];
 const DEFAULT_API_KEY_ENV = "BRAVE_API_KEY";
 const DEFAULT_THROTTLE_MS = 1500;
@@ -27,7 +27,7 @@ const Config = z.object({
   maxAttempts: z.number().min(1).step(1),
 });
 
-const BRAVE_SEARCH_SETTINGS_NAMESPACE = settingsNamespace("web-search-brave");
+const BRAVE_SEARCH_SETTINGS_NAMESPACE = settingsNamespace("web-search-brave-moe4all");
 
 function toInt(value, fallback) {
   if (value === void 0) return fallback;

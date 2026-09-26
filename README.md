@@ -1,4 +1,6 @@
-# @deads-inc/dsh-web-search-brave
+# dsh-web-search-brave-moe4all
+
+> MoE4All-maintained edition of `@deads-inc/dsh-web-search-brave`. See [UPSTREAM.md](UPSTREAM.md) for the exact source checkpoint, attribution, and purpose of this independent repository.
 
 Brave Search API-backed web search provider for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`). It registers a `WebSearchProvider` into the `ctx.web` seam, so the built-in `web_search` tool works out of the box when you have a Brave Search API key.
 
