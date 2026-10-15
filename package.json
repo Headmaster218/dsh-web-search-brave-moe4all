@@ -46,7 +46,8 @@
     "LICENSE"
   ],
   "engines": {
-    "node": ">=18.17"
+    "node": ">=18.17",
+    "dsh": ">=0.1.1-rc.2 <0.2.0-0"
   },
   "publishConfig": {
     "access": "public"
@@ -63,5 +64,13 @@
     "@deepseek-ai/dsh-settings": ">=0.1.0-rc.6",
     "@deepseek-ai/dsh-web": ">=0.1.0-rc.6",
     "@deepseek-ai/schemastery": ">=3.18.1"
+  },
+  "packageManager": "npm@10.9.2",
+  "scripts": {
+    "ci:check": "node --experimental-vm-modules ci/plugin-ci.mjs check",
+    "ci:test": "node ci/plugin-ci.mjs test",
+    "ci:contract": "node ci/plugin-ci.mjs test-contract",
+    "release:build": "node --experimental-vm-modules ci/plugin-ci.mjs pack",
+    "release:verify": "node ci/plugin-ci.mjs verify-release"
   }
 }
