@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-moe4all.3] - 2026-10-17
+
+- 增加仓库独立的 npm 下载缓存与 draft release 验收入口，开发 CI 和发布 CI 复用同一套本地实现。
+- 保留原有离线测试与包校验；搜索请求、USER_AGENT 和运行逻辑不变。
+
 ## [1.0.0-moe4all.2] - 2026-10-16
 
 - 将 `-moe4all.N` 定制修订发布到正式更新通道，修复能力中心默认无法发现更新的问题。

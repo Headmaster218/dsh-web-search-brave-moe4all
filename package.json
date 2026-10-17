@@ -1,7 +1,7 @@
 {
   "name": "dsh-web-search-brave-moe4all",
   "description": "MoE4All edition of the Brave Search provider for the DeepSeek Harness web capability seam (ctx.web)",
-  "version": "1.0.0-moe4all.2",
+  "version": "1.0.0-moe4all.3",
   "type": "module",
   "main": "index.js",
   "exports": {
